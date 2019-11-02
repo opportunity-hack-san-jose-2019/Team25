@@ -6,3 +6,4 @@
 * Neeraj Rattehalli
 * Kevin Rossel
 * Anish Palvai
+* Tyler Lafayette
