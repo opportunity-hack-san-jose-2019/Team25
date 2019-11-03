@@ -1,0 +1,14 @@
+@import "src/all";
+
+.stats-wrapper {
+    .text-small-caps {
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        color: $subheader-color;
+        font-size: $text-size-small;
+    }
+}

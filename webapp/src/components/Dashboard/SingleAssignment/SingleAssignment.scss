@@ -1,0 +1,49 @@
+@import "src/all";
+
+.single-assignment {
+    .text-small-caps {
+        font-weight: bold;
+        font-size: $text-size-tiny;
+        color: $header-color;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+    .grade-stat {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .grade-spectrum-canvas {
+        width: 300px;
+        height: 40px;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+        background: $border-subtle-color;
+
+        .point {
+            position: absolute;
+            top: 0;
+            width: 8px;
+            height: 40px;
+            background: rgba(56, 135, 215, 0.3);
+        }
+    }
+
+    .legend {
+        padding-top: 0.2em;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .italicized.small {
+        padding-top: 1em;
+        font-size: $text-size-tiny;
+        font-style: italic;
+        text-align: center;
+    }
+}
