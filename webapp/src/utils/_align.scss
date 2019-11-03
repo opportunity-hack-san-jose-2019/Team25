@@ -1,0 +1,71 @@
+[class^="justify"],
+[class^="align"] {
+    display: flex;
+
+    &.justify-center {
+        justify-content: center;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+}
+
+[class^="direction"],
+[class*=" direction"] {
+    display: flex;
+
+    &.direction-row {
+        flex-direction: row;
+    }
+
+    &.direction-column {
+        flex-direction: column;
+    }
+}
+
+.transition {
+    position: relative;
+}
+
+.fade-enter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.fade-enter-active {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.fade-exit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transform: scale(0);
+}
+
+.fade-exit-active {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

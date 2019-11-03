@@ -13,6 +13,7 @@ import Assignments from "./Assignments"
 import Students from "./Students"
 import Classes from "./Classes"
 import SingleAssignment from "./SingleAssignment"
+import SingleClass from "./SingleClass"
 
 const routerTable = [
     {
@@ -62,6 +63,9 @@ export default class Dashboard extends Component {
                         </Route>
                         <Route exact path="/students">
                             <Students />
+                        </Route>
+                        <Route exact path="/class/:id">
+                            <SingleClass />
                         </Route>
                         <Route exact path="/assignment/:id">
                             <SingleAssignment />

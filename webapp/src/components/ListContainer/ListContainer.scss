@@ -1,0 +1,20 @@
+.list-outer {
+    width: 100%;
+
+    .list-container {
+        width: 100%;
+        max-width: 1200px;
+        overflow-x: scroll;
+
+        &.grid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+
+        .list-item {
+            padding: 1em;
+        }
+    }
+}

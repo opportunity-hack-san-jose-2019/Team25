@@ -32,18 +32,22 @@ export default class Submission extends Component {
                                             ? `${item.assignedGrade}/${
                                                   assignment.maxPoints
                                               } • ${new Date(
-                                                  item.submissionHistory[
-                                                      item.submissionHistory
-                                                          .length - 1
-                                                  ].gradeHistory.gradeTimestamp
+                                                  (
+                                                      item.submissionHistory[
+                                                          item.submissionHistory
+                                                              .length - 1
+                                                      ].gradeHistory || {}
+                                                  ).gradeTimestamp || 0
                                               ).toDateString()}`
                                             : ""}
                                         {item.state == "TURNED_IN"
                                             ? `Turned in • ${new Date(
-                                                  item.submissionHistory[
-                                                      item.submissionHistory
-                                                          .length - 1
-                                                  ].gradeHistory.gradeTimestamp
+                                                  (
+                                                      item.submissionHistory[
+                                                          item.submissionHistory
+                                                              .length - 1
+                                                      ].gradeHistory || {}
+                                                  ).gradeTimestamp || 0
                                               ).toDateString()}`
                                             : ""}
                                         {item.state == "CREATED" ||
