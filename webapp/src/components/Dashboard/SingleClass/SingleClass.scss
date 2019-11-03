@@ -1,0 +1,12 @@
+@import "src/all";
+
+.single-class {
+    .text-small-caps {
+        font-weight: bold;
+        font-size: $text-size-tiny;
+        color: $header-color;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+}

@@ -1,0 +1,26 @@
+@import "src/all";
+
+.button-wrapper {
+    a {
+        text-decoration: none;
+        color: inherit;
+        outline: 0;
+
+        .button {
+            padding: 0.8em 1.5em;
+            border-radius: 40px;
+            border: 0;
+            outline: 0;
+            font-family: $font-stack;
+            font-weight: bold;
+            color: $header-color;
+            background: $shade-color;
+            transition: 0.2s ease;
+
+            &:hover {
+                cursor: pointer;
+                background: darken($shade-color, 10);
+            }
+        }
+    }
+}
