@@ -52,11 +52,15 @@ for k, v in students_list.items():
 	print(k, v)
 	first = v.split(" ")[0]
 	last = v.split(" ")[1]
-	email = first + "." + last + "@gmail.com"
-	assignment_name = first + " " + last + " "
-	grade = math.floor(random.random()*100)
 
-	sf.Contact.create({'LastName': last, 'FirstName': first, "Email": email})
+	email = first + "." + last + "@gmail.com"
+
+	if "ñ" in email:
+		email = "invalid@test.com"
+	assignment_name = first + " " + last + " "
+	grade = math.floor(random.random()*50)+50
+
+	sf.Contact.create({'LastName': last, 'FirstName': first, "Email": email, "title": str(grade)})
 
 
 
